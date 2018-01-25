@@ -1,0 +1,25 @@
+OPTIONS localhost:8080/register
+
+### Valid Json
+POST localhost:8080/register #Valid Json
+Content-Type: application/json
+
+{
+    "firstName": "first",
+    "lastName": "last",
+    "username": "aweaweq23123123123",
+    "password": "password123"
+}
+
+### Invalid Json
+POST localhost:8080/register
+Content-Type: application/json
+
+{
+    "firstName": "asdsa",
+    "lastName": "",
+    "password": "1",
+    "username": null
+}
+
+###
